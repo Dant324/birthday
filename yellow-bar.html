@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Amazing One!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: purple;
+    }
+    h1 {
+      font-size: 2em;
+      color: #f00; /* Red for love! */
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+    #buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    #yes {
+      background-color: #4CAF50; /* Green for acceptance! */
+      color: white;
+    }
+    #no {
+      background-color: #f44336; /* Red for playful challenge! */
+      color: white;
+    }
+    #message {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  
+  <span style='font-size:100px;'>&#128156;</span>
+  <h1>Happy Birthday, FIFI  </h1>
+  <p>I'm so sorry that I couldn't get you that expensive gift you wanted or throw you a big birthday party.  Things have been a little tight financially lately, and I haven't been the best boyfriend I could be</p>
+  <p>The truth is, you deserve the world, and I want to make it up to you. I'm working hard to improve my situation, but most importantly, I want to improve how I treat you. You bring so much joy into my life, and I would be honored to have you as my official girlfriend.</p>
+  <p>so what do you say Phoebe?</p>
+  <div id="buttons">
+    <button id="no">Nah</button>
+    <button id="yes">yes, please</button>
+    <br>
+    <div id="buttons">
+      <button id="loveButton" onclick="alert('I LOVE YOU SO MUCH!')">Click here, babe</button>
+    </div>
+    <p id="message"></p>
+  </div>
+  <p id="message"></p>
+<span>&#128522;</span>
+  <script>
+    const yesButton = document.getElementById('yes');
+    const noButton = document.getElementById('no');
+    const message = document.getElementById('message');
+    noButton.addEventListener('click', function() {
+    this.classList.add('hidden'); // Add hidden class on click
+      setTimeout(() => {
+        this.textContent = 'Cant do that you stuck with me tap the other one ';
+        this.classList.remove('hidden'); // Remove hidden class after delay
+      }, 500); // Delay of 0.5 seconds for animation
+    });
+
+    yesButton.addEventListener('click', function() {
+      message.textContent = 'yayyy heres 1000 ksh for your troubles and more to come soon ';
+    });
+ 
+   
+  </script>
+</body>
+</html>
